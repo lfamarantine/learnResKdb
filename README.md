@@ -63,6 +63,28 @@ l0:(l1;l2) # combining 2 lists
 l3:(9;8;(99;88)) # nesting lists to capture data complexity
 ```
 
+**Dictionaries**
+Extension of lists that create the foundation for creating tables: "key -> value" relationship between elements
+```
+d:`Name`Age`Sex`Weight!(`John;36;"M";60.3)
+d[`Name`Sex] # lookup
+d[`Age]:35 # amend & upsert
+d[`Height]:"182 Ft" # extend
+```
+
+
+Operations
+----------
+
+**Creating Tables**
+
+
+
+
+
+
+
+
 
 
 
