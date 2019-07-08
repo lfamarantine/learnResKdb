@@ -78,8 +78,17 @@ Operations
 
 **Creating Tables**
 
+empty table
+```
+trade:([]time:();sym:();price:();size:()) # no type declaration
+trade:([]time:`time$();sym:`$();price:`float$();size:`int$()) # with type declaration
+```
 
-
+non-empty table
+```
+trade:([]sym:(`a`b);price:(1 2)) # without key
+trade:([sym:`$()]time:`time$();price:`float$();size:`int$()) # with key
+```
 
 
 
