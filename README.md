@@ -19,8 +19,8 @@ To start using kdb+, you need to start the q session. Three ways:
 3. q.exe file onto “C:\Windows\System32” and on the run terminal, just type “q”.
 
 
-Example
--------
+Data types
+----------
 
 **Date**
 
@@ -49,4 +49,22 @@ tt1: 03:30:00.000 # store 3.30 am
 `int$tt1 # number of milliseconds in 3.5 hours
 `hh$tt1 # extract hour component from time
 ```
+
+**Lists**
+```
+l1:(-10.0;3.1415e;`abcd;"r")
+count l1
+l1[0]
+l2: (9;8;7)
+l2[2]:66 # assignments
+symbols:(`Life;`Is;`Beautiful)
+chars:("h";"e";"l";"l";"o";" ";"w";"o";"r";"l";"d")
+l0:(l1;l2) # combining 2 lists
+l3:(9;8;(99;88)) # nesting lists to capture data complexity
+```
+
+
+
+
+
 
